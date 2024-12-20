@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255, 192, 203, 0.563);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .game-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #1479a1c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .card.flipped {
+    background-color: rgba(37, 32, 177, 0.941);
+  }
+  
+  .card img {
+    width: 80px;
+    height: 80px;
+    display: none;
+  }
+  
+  .card.flipped img {
+    display: block;
+    color: aqua;
+  }
+  
+  .info {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: rgb(9, 21, 159);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ec0fa29c;
+  }
+  
